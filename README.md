@@ -1,72 +1,39 @@
-# React + TypeScript + Vite
+![GitHub repo size](https://img.shields.io/github/repo-size/LucasHARosa/Face_Detector)
+![GitHub language count](https://img.shields.io/github/languages/count/LucasHARosa/Face_Detector)
+![GitHub top language](https://img.shields.io/github/languages/top/LucasHARosa/Face_Detector)
+![GitHub last commit](https://img.shields.io/github/last-commit/LucasHARosa/Face_Detector)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Face Analysis App – Vite + TypeScript
 
-Currently, two official plugins are available:
+Projeto frontend desenvolvido com **Vite + TypeScript** que utiliza **Face API** para **análise de imagens capturadas pela câmera**, realizando **detecção, identificação e marcação de rostos**, além de **análise de postura/orientação facial**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O objetivo deste repositório é servir como **base técnica e experimental** para aplicações que envolvem visão computacional no navegador.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Objetivo do Projeto
 
-```js
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+- Capturar imagens em tempo real pela câmera
+- Detectar rostos automaticamente
+- Marcar pontos faciais (landmarks)
+- Identificar orientação/postura do rosto
+- Demonstrar o uso da Face API no browser
+- Servir como base para estudos e projetos de visão computacional
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## 🧠 Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 📷 Acesso à câmera do dispositivo
+- 😀 Detecção de rostos em tempo real
+- 📍 Marcação de pontos faciais (eyes, nose, mouth, jaw)
+- 🧭 Análise de postura/orientação do rosto
+- ⚡ Processamento direto no navegador
+- 🧩 Código modular e extensível
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
 
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+---
+
 
 Repo Models:
 https://github.com/justadudewhohacks/face-api.js-models?tab=readme-ov-file
@@ -79,3 +46,12 @@ https://justadudewhohacks.github.io/face-api.js/face_and_landmark_detection
 
 Docs
 https://justadudewhohacks.github.io/face-api.js/docs/globals.html
+
+
+<div align="center">
+    
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com) &nbsp;
+[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) 
+
+</div>
